@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="switch" id="switch"></div>
+    <div class="main">
+
+        <div class="calc">
+            <div class="display">
+                <input type="text" id="res" disabled>
+            </div>
+            <div class="keys">
+                <input type="button" onclick="add('7')" value="7">
+                <input type="button" onclick="add('8')" value="8">
+                <input type="button" onclick="add('9')" value="9">
+                <input type="button" onclick="add('*')" value="*">
+
+                <input type="button" onclick="add('4')" value="4">
+                <input type="button" onclick="add('5')" value="5">
+                <input type="button" onclick="add('6')" value="6">
+                <input type="button" onclick="add('-')" value="-">
+
+                <input type="button" onclick="add('1')" value="1">
+                <input type="button" onclick="add('2')" value="2">
+                <input type="button" onclick="add('3')" value="3">
+                <input type="button" onclick="add('+')" value="+">
+
+                <input type="button" id="equal" value="=">
+                <input type="button" onclick="add('0')" value="0">
+                <input type="button" id="clear" value="CE">
+                <input type="button" onclick="add('/')" value="/">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
